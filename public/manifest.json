@@ -1,6 +1,6 @@
 {
-  "short_name": "Invictus Assessment",
-  "name": "Invictus Assessment",
+  "short_name": "invictus-assessment",
+  "name": "invictus-assessment",
   "icons": [
     {
       "src": "favicon.ico",
