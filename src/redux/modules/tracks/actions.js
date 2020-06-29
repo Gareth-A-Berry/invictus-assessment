@@ -1,8 +1,8 @@
 import {
-  GET_TRACKS_SUCCESS,
-  GET_TRACKS_STARTED,
   GET_TRACKS_ERROR,
-  RESET_TRACKS
+  GET_TRACKS_STARTED,
+  GET_TRACKS_SUCCESS,
+  RESET_TRACKS,
 } from './types';
 import getTracksService from '../../../services/tracks';
 

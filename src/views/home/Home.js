@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import {
-  Search,
+  AlbumInformationCard,
   Carousel,
   Divider,
-  AlbumInformationCard,
+  Search,
 } from '../../components';
 import {
-  resetArtistsAction,
   getArtistsAction,
+  resetArtistsAction,
 } from '../../redux/modules/artist/actions';
 import {
-  resetAlbumsAction,
   getAlbumsAction,
+  resetAlbumsAction,
 } from '../../redux/modules/albums/actions';
 import {
-  resetTracksAction,
   getTracksAction,
+  resetTracksAction,
 } from '../../redux/modules/tracks/actions';
 
 const Home = (props) => {
@@ -32,7 +32,6 @@ const Home = (props) => {
     albums,
     tracksLoading,
     tracks,
-    tracksError,
     getTracks,
     resetTracks,
     resetAlbums,

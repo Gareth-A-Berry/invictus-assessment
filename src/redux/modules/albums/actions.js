@@ -1,6 +1,6 @@
 import {
-  GET_ALBUMS_STARTED,
   GET_ALBUMS_ERROR,
+  GET_ALBUMS_STARTED,
   GET_ALBUMS_SUCCESS,
   RESET_ALBUMS,
 } from './types';
@@ -25,7 +25,6 @@ export const resetAlbumsAction = () => ({
 });
 
 export const getAlbumsAction = ({ id }) => (dispatch) => {
-  console.log('id', id);
   dispatch(getAlbumsStarted());
   if (id === '') {
     dispatch(getAlbumsSuccess({ payload: { data: [] } }));
@@ -39,4 +38,3 @@ export const getAlbumsAction = ({ id }) => (dispatch) => {
       });
   }
 };
-

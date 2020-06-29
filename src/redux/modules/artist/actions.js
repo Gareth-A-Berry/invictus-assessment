@@ -20,7 +20,7 @@ const getArtistsSuccess = ({ payload }) => ({
   payload,
 });
 
-export const resetArtistsAction = () =>({
+export const resetArtistsAction = () => ({
   type: RESET_ARTISTS,
 });
 
