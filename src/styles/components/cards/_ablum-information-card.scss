@@ -1,0 +1,12 @@
+.album-information-card-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(transparent 14.75rem, $color-primary-light 14.25rem) no-repeat;
+}
+
+
+.album-information-card-table {
+  flex: 0.98;
+}

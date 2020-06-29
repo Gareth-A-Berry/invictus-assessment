@@ -1,0 +1,27 @@
+.album-card-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.album-card-image {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  height: 18rem;
+  width: 18rem;
+}
+
+.album-card-title {
+  width: 18rem;
+  color: $color-quaternary;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-top: 1rem;
+}

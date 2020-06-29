@@ -1,0 +1,109 @@
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.85;
+  background-color: $color-primary-light;
+  position: relative;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  height: 6rem;
+  font-size: 2rem;
+  color: $color-grey;
+  margin-left: 2rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-result {
+  padding-bottom: 2rem;
+  z-index: 10;
+  list-style: none;
+  transition: width 0.3s;
+  color: $color-grey;
+}
+
+.search-result__item {
+  height: 6rem;
+  font-size: 1.8rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    border-bottom: 0.2rem solid $color-grey;
+  }
+  &--active {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1rem solid white;
+    height: 6rem;
+    color: $color-secondary;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 1.8rem;
+    &:not(:last-child) {
+      border-bottom: 0.2rem solid $color-grey;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &:hover{
+    color: $color-secondary;
+    cursor: pointer;
+  }
+}
+
+.search-result__header {
+  margin-left: 2rem;
+  font-size: 1.8rem;
+}
+
+.search-button {
+  font-size: 2rem;
+  color: $color-grey;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $color-tertiary;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  border: none;
+  flex: 0.1;
+  height: 6rem;
+  transition: all 0.4s ease 0s;
+  &:hover {
+    cursor: pointer;
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 0.5rempx 3rem -1rem rgba(0,0,0,0.57);
+    -moz-box-shadow: 0 0.5rem 3rem -1rem rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+  }
+    &:focus {
+      outline: none;
+    }
+}
+
+
+.search-cut-out {
+  height: 6rem;
+  background-color: $color-primary;
+  clip-path: polygon(0 4rem, 5rem 4rem, 8rem 2rem, 11rem 4rem, 100% 4rem, 100% 0%, 0% 0%);
+}
+
+.search-loader-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
