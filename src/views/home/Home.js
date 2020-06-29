@@ -62,7 +62,7 @@ const Home = (props) => {
   };
 
   const handleArtistSelection = ({ selected }) => {
-    if (selected.name && selected.id) {
+    if (selected && selected.name && selected.id) {
       handleSelected(true);
       handleQueryChange(selected.name);
       handleArtistChange(selected);
