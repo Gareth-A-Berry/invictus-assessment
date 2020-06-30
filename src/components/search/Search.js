@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { ENTER, KEYDOWN, KEYUP } from './constants';
 
 const Search = (props) => {
   const {
@@ -14,23 +15,20 @@ const Search = (props) => {
   const [activeOption, handleActiveOption] = useState(0);
 
   const onKeyDown = (e) => {
-    if (e.keyCode === 13) {
+    if (e.keyCode === ENTER) {
       handleActiveOption(0);
-    } else if (e.keyCode === 38) {
+      e.target.blur();
+      onSelection({ selected: results[activeOption] });
+    } else if (e.keyCode === KEYUP) {
       if (activeOption === 0) {
         return;
       }
       handleActiveOption(activeOption - 1);
-    } else if (e.keyCode === 40) {
+    } else if (e.keyCode === KEYDOWN) {
       if (activeOption - 1 === results.length) {
         return;
       }
       handleActiveOption(activeOption + 1);
-    }
-
-    if (e.key === 'Enter') {
-      e.target.blur();
-      onSelection({ selected: results[activeOption] });
     }
   };
 

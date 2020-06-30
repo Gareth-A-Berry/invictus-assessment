@@ -2,7 +2,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   &:hover {
     cursor: pointer;
@@ -19,9 +19,8 @@
 .album-card-title {
   width: 18rem;
   color: $color-quaternary;
-  font-size: 1.5rem;
+  font-size: $default-font-size ;
   font-weight: 400;
-  letter-spacing: 0.1rem;
   text-align: center;
   margin-top: 1rem;
 }

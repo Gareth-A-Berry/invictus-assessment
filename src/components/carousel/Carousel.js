@@ -66,7 +66,7 @@ const Carousel = (props) => {
 
   return (
     <div className="carousel">
-      <h2 className="heading-secondary">Albums</h2>
+      <h2 className="heading-secondary">ALBUMS</h2>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       {options.length > 0 ? (
         <Slider {...settings}>
