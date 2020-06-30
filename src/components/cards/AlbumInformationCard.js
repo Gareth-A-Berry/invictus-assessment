@@ -5,7 +5,6 @@ import Table from '../table/Table';
 
 const AlbumInformationCard = (props) => {
   const { album, tracks } = props;
-  console.log('album', album);
   return (
     <div className="album-information-card-container">
       <ProgressiveImage
